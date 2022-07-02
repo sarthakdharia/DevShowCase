@@ -34,13 +34,13 @@ class _LandingPageState extends State<LandingPage> {
             onSwipeUp: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => LoginPage()),
+                MaterialPageRoute(builder: (context) => Login()),
               );
             },
             onSwipeDown: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => RegisterPage()),
+                MaterialPageRoute(builder: (context) => Register()),
               );
             },
           ),
