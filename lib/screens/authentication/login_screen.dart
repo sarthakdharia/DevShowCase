@@ -31,7 +31,7 @@ class Login extends GetWidget<AuthController> {
                 end: Alignment.bottomCenter,
                 colors: [
                   Color.fromARGB(255, 0, 7, 12),
-                  Color.fromARGB(255, 7, 39, 99),
+                  Colors.yellow,
                 ],
               )),
             ),
@@ -45,14 +45,14 @@ class Login extends GetWidget<AuthController> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    const Text(
+                    Text(
                       "Login With Email and Password",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: 'Segoe',
                         fontSize: 35,
                         fontWeight: FontWeight.w400,
-                        color: Color(0xFF78D6FF),
+                        color: Theme.of(context).primaryColor,
                       ),
                     ),
                     const SizedBox(
@@ -65,7 +65,7 @@ class Login extends GetWidget<AuthController> {
                               hintText: "Email", icon: Icon(Icons.email)),
                           cursorColor: Colors.white,
                           style: TextStyle(
-                            color: Color(0xFF78D6FF),
+                            color: Theme.of(context).primaryColor,
                           ),
                           controller: emailController,
                           validator: (val) {
@@ -86,7 +86,7 @@ class Login extends GetWidget<AuthController> {
                             hintText: "Password", icon: Icon(Icons.password)),
                         cursorColor: Colors.white,
                         style: TextStyle(
-                          color: Color(0xFF78D6FF),
+                          color: Theme.of(context).primaryColor,
                         ),
                         controller: passwordController,
                         obscureText: true,
@@ -111,21 +111,21 @@ class Login extends GetWidget<AuthController> {
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
-                                shape: const StadiumBorder(
+                                shape: StadiumBorder(
                                   side: BorderSide(
                                     width: 3,
-                                    color: Color(0xFF78D6FF),
+                                    color: Theme.of(context).primaryColor,
                                   ),
                                 ),
                                 primary: Color.fromARGB(0, 120, 215, 255),
                               ),
-                              child: const Text(
+                              child: Text(
                                 "Log In",
                                 style: TextStyle(
                                   fontFamily: 'Segoe',
                                   fontSize: 20,
                                   fontWeight: FontWeight.w400,
-                                  color: Color(0xFF78D6FF),
+                                  color: Theme.of(context).primaryColor,
                                 ),
                               ),
                               onPressed: () {
@@ -141,10 +141,10 @@ class Login extends GetWidget<AuthController> {
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
-                                shape: const StadiumBorder(
+                                shape: StadiumBorder(
                                   side: BorderSide(
                                     width: 3,
-                                    color: Color(0xFF78D6FF),
+                                    color: Theme.of(context).primaryColor,
                                   ),
                                 ),
                                 primary: Color.fromARGB(0, 120, 215, 255),
@@ -155,7 +155,7 @@ class Login extends GetWidget<AuthController> {
                                   fontFamily: 'Segoe',
                                   fontSize: 20,
                                   fontWeight: FontWeight.w400,
-                                  color: Color(0xFF78D6FF),
+                                  color: Theme.of(context).primaryColor,
                                 ),
                               ),
                               onPressed: () {
